@@ -1,0 +1,20 @@
+:root{
+    --white:#f0f0f0;
+    --black:#000000;
+    --grey:#f5f5f5;
+}
+
+*{
+    box-sizing: border-box;
+    background-color:var(--grey)
+}
+
+.black{
+    background-color: var(--black);
+
+
+}
+
+.white{
+    background-color: var(--white);
+}
