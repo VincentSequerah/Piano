@@ -2,19 +2,75 @@
     --white:#f0f0f0;
     --black:#000000;
     --grey:#f5f5f5;
+    --green:#04AA6D;
 }
 
 *{
     box-sizing: border-box;
-    background-color:var(--grey)
+    background-color:var(--grey);
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
+
+#keybord{
+    margin: auto;
+    width: 90%;
+    border: 3px solid green;
+    display: flex;
+    justify-content: center;
+}
+.key{
+    border:3px solid var(--black);
+    padding: 20px;
+}
+
+.key:active{
+    background-color: var(--green);
+}
 .black{
     background-color: var(--black);
-
+    height: 50px;
 
 }
 
 .white{
     background-color: var(--white);
+    height: 100px;
+
+}
+
+
+
+/*add home button and animation*/
+
+#home-button{
+    background-color: #146C94;
+    color: #F6F1F1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    align-content: center;
+    text-align: center;
+    display:block;
+    aspect-ratio: 1/1;
+    width:min-content;
+    padding: 2px;
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    left:10px ;
+    font-size: 14px;
+
+
+}
+
+#home-button:hover {
+    background-color: #19A7CE;
+    color: black;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+#home-button:active{
+    transform: scale(.9);
 }
